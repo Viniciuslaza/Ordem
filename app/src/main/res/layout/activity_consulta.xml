@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#363636"
+    android:layout_margin="10dp"
+    tools:context=".ConsultaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Detalhes da Os."
+        android:textSize="30sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Cliente"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F5FFFA" />
+
+    <TextView
+        android:id="@+id/tv_atendente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Atendente"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+    android:id="@+id/tv_infe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+    android:text="Informação equipamento"
+    android:textSize="20sp"
+    android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Tipo"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_marca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Marca"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Modelo"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Cor"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_ns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="N/S"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Informação cliente"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <TextView
+        android:id="@+id/tv_laudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Laudo tecnico"
+        android:textSize="20sp"
+        android:textColor="#F5FFFA"/>
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#3CB371"
+        android:text="Voltar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

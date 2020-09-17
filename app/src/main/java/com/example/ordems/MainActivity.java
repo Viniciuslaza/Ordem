@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ordems.View.ConsultaActivity;
+import com.example.ordems.View.OsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Cpf = et_cpf.getText().toString();
 
-                        Intent intent = new Intent(getApplicationContext(), ConsultaActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), OsActivity.class);
                         intent.putExtra("cpfUsuario", Cpf);
 
                         startActivity(intent);

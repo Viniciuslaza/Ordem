@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.ordems.MainActivity;
 import com.example.ordems.R;
 
 public class ConsultaActivity extends AppCompatActivity implements View.OnClickListener {
@@ -54,7 +53,7 @@ public class ConsultaActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_voltar:
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), OsActivity.class);
                 startActivity(intent);
                 finish();
         }

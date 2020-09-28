@@ -57,7 +57,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:layout_marginTop="15dp"
-    android:text="Informação equipamento"
+    android:text="Data previsão"
     android:textSize="20sp"
     android:textColor="#F5FFFA"/>
 

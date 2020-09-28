@@ -15,14 +15,14 @@
         android:src="@drawable/logoos" />
 
     <TextView
-        android:id="@+id/tv_nome"
+        android:id="@+id/tv_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_weight="1"
-        android:text="Nome do cliente"
+        android:layout_weight="0.5"
+        android:text="Id"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -31,7 +31,7 @@
         android:id="@+id/tv_equipamento"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8"
+        android:layout_weight="1.8"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_gravity="center"

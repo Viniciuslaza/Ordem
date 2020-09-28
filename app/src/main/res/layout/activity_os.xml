@@ -26,6 +26,7 @@
         android:textStyle="bold"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/activity_oscliente"
         android:id="@+id/rv_ordems"
         android:background="#363636"
         android:layout_width="match_parent"

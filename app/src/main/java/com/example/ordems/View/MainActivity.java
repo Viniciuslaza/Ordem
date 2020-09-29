@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(result);
 
-                if (jsonObject.getBoolean("validaçao")){
+                if (jsonObject.getBoolean("validacao")){
                     //
                     Log.i("ApiConsultarCpf", "CPF:" +jsonObject.getString("cpf"));
                     Log.i("ApiConsultarNome", "Nome:" +jsonObject.getString("nome"));

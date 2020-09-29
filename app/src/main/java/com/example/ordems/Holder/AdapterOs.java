@@ -1,7 +1,5 @@
 package com.example.ordems.Holder;
 
-import android.system.Os;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

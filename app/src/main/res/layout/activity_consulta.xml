@@ -27,25 +27,25 @@
         android:background="@android:color/black"
         android:gravity="center"
         android:text="Detalhes da Os."
-        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textSize="22sp"
         android:textColor="#F5FFFA"/>
 
     <TextView
         android:id="@+id/tv_cliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
         android:text="Cliente"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:textColor="#F5FFFA" />
 
     <TextView
         android:id="@+id/tv_atendente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Atendente"
         android:textSize="20sp"
@@ -55,7 +55,7 @@
     android:id="@+id/tv_infe"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
+        android:layout_marginLeft="10dp"
     android:layout_marginTop="15dp"
     android:text="Data previsão"
     android:textSize="20sp"
@@ -65,7 +65,7 @@
         android:id="@+id/tv_tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Tipo"
         android:textSize="20sp"
@@ -75,7 +75,7 @@
         android:id="@+id/tv_marca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Marca"
         android:textSize="20sp"
@@ -85,7 +85,7 @@
         android:id="@+id/tv_modelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Modelo"
         android:textSize="20sp"
@@ -95,7 +95,7 @@
         android:id="@+id/tv_cor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Cor"
         android:textSize="20sp"
@@ -105,7 +105,7 @@
         android:id="@+id/tv_ns"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="N/S"
         android:textSize="20sp"
@@ -115,7 +115,7 @@
         android:id="@+id/tv_inf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:text="Informação cliente"
         android:textSize="20sp"
@@ -125,23 +125,26 @@
         android:id="@+id/tv_laudo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:text="Informação tecnico"
         android:layout_marginTop="15dp"
-        android:text="Laudo tecnico"
+        android:layout_marginLeft="10dp"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
 
+
+
 </LinearLayout>
         <Button
-            android:id="@+id/btn_voltar"
+            android:id="@+id/btn_volt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="470dp"
             android:background="#3CB371"
             android:text="Voltar"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
             />
+
 
     </androidx.cardview.widget.CardView>
 

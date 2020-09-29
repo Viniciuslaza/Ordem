@@ -204,7 +204,7 @@ public class OsActivity extends AppCompatActivity implements View.OnClickListene
             try {
                 JSONObject jsonObject = new JSONObject(result);
 
-                if (jsonObject.getBoolean("validaçao")) {
+                if (jsonObject.getBoolean("validacao")) {
                     int lenght = jsonObject.getInt("lenght");
                     ModelOs os;
                     for (int i = 1; i <= lenght; i++) {

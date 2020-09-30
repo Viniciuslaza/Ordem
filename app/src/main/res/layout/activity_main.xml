@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="200dp"
         android:src="@drawable/logoos"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
@@ -33,15 +33,15 @@
     <EditText
         android:id="@+id/et_cpf"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="3dp"
         android:inputType="number"
+        android:textSize="18dp"
         android:textColor="#F5FFFA"
         android:layout_marginEnd="40dp"
         android:gravity="center"
         />
-
     <TextView
         android:id="@+id/alertaCpf"
         android:layout_width="wrap_content"
@@ -49,6 +49,47 @@
         android:text="Campo Obrigatório!"
         android:textColor="@android:color/holo_red_light"
         android:textSize="16dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/et_cpf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+   <TextView
+        android:id="@+id/tv_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Digite sua senha."
+        android:textColor="#F5FFFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#F5FFFA"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/alertasenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campo Obrigatório!"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16dp"
+        android:layout_gravity="center"
         android:gravity="center"
         android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/et_cpf"
@@ -59,10 +100,10 @@
     <Button
         android:id="@+id/btn_ver"
         android:layout_width="250dp"
-        android:layout_marginLeft="55dp"
         android:layout_height="wrap_content"
         android:background="#3CB371"
         android:text="Verificar"
+        android:layout_gravity="center"
         android:textSize="20sp"
 
         />

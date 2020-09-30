@@ -36,10 +36,11 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
 
 
-    private EditText et_cpf;
+    private EditText et_cpf, et_senha;
     private Button btn_ver;
     private String Cpf;
-    private TextView alertaCpf;
+    private int Senha;
+    private TextView alertaCpf, alertaSenha;
 
     //testando
     @Override
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         this.et_cpf = findViewById(R.id.et_cpf);
         this.btn_ver = findViewById(R.id.btn_ver);
+        this.et_senha = findViewById(R.id.et_senha);
+        this.alertaSenha = findViewById(R.id.alertasenha);
         this.alertaCpf = findViewById(R.id.alertaCpf);
 
         this.btn_ver.setOnClickListener(new View.OnClickListener() {
@@ -60,13 +63,19 @@ public class MainActivity extends AppCompatActivity {
                     if (et_cpf.getText().toString().equals("")) {
                         et_cpf.requestFocus();
                         alertaCpf.setVisibility(View.VISIBLE);
-                    } else {
+                    }
+                    else if(et_senha.getText().toString().equals("")){
+                            et_senha.requestFocus();
+                            alertaSenha.setVisibility(View.VISIBLE);
+                    }
+                    else {
                         Cpf = et_cpf.getText().toString();
+                        Senha = Integer.parseInt(et_senha.getText().toString());
                         Log.i("Cpf", "Cpf:"+Cpf);
+                        Log.i("Senha", "Senha:"+Senha);
 
-                        ConsultarCpfAsyncTask task = new ConsultarCpfAsyncTask("validarCPF", Cpf);
+                        ConsultarCpfAsyncTask task = new ConsultarCpfAsyncTask("validarCPF", Cpf, Senha);
                         task.execute();
-
 
 
                     }
@@ -79,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     public class ConsultarCpfAsyncTask extends AsyncTask<String, String, String> {
 
         String api_token, query, api_cpf, api_nm_cliente;
-
+        int api_senha;
 
         HttpURLConnection conn;
         URL url = null;
@@ -92,12 +101,14 @@ public class MainActivity extends AppCompatActivity {
 
         int response_code;
 
-        public ConsultarCpfAsyncTask(String token, String api_cpf){
+        public ConsultarCpfAsyncTask(String token, String api_cpf, int api_senha){
             this.api_token = token;
             this.api_cpf = api_cpf;
+            this.api_senha = api_senha;
             this.builder = new Uri.Builder();
             builder.appendQueryParameter("api_token", api_token);
             builder.appendQueryParameter("api_cpf", String.valueOf(api_cpf));
+            builder.appendQueryParameter("api_senha", String.valueOf(api_senha));
         }
 
         @Override
@@ -205,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                 if (jsonObject.getBoolean("validacao")){
                     //
                     Log.i("ApiConsultarCpf", "CPF:" +jsonObject.getString("cpf"));
-                    Log.i("ApiConsultarNome", "Nome:" +jsonObject.getString("nome"));
+                    Log.i("ApiConsultarSenha", "senha:" +jsonObject.getInt("senha"));
                     goOsActivity();
 
                 }
@@ -232,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
     public void erroActivity(){
-        Toast.makeText(this, "CPF não encotrado!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Dados Invalidos!!", Toast.LENGTH_SHORT).show();
     }
 
 

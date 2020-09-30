@@ -71,8 +71,8 @@ public class ConsultaActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_volt:
-                Intent intent = new Intent(getApplicationContext(), OsActivity.class);
-                startActivity(intent);
+
+
                 finish();
         }
 

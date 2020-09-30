@@ -35,7 +35,7 @@
         android:id="@+id/tv_cliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:text="Cliente"
         android:textSize="20sp"
@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Atendente"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -56,7 +56,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-    android:layout_marginTop="15dp"
+    android:layout_marginTop="10dp"
     android:text="Data previsão"
     android:textSize="20sp"
     android:textColor="#F5FFFA"/>
@@ -66,7 +66,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Tipo"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Marca"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -86,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Modelo"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -96,7 +96,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Cor"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -106,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="N/S"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -116,7 +116,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="Informação cliente"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -126,7 +126,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Informação tecnico"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:textSize="20sp"
         android:textColor="#F5FFFA"/>
@@ -138,7 +138,7 @@
             android:id="@+id/btn_volt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="470dp"
+            android:layout_gravity="bottom"
             android:background="#3CB371"
             android:text="Voltar"
             android:layout_marginLeft="0dp"
